@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Aim
     - FixedJoystick
     - MoveScene
     - PlayerMove
@@ -64,29 +65,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11610}
+      Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 12006}
+      Script: {instanceID: 12004}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12178}
     - Class: 114
-      Script: {instanceID: 12530}
+      Script: {instanceID: 12528}
     - Class: 114
-      Script: {instanceID: 12882}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 13126}
+      Script: {instanceID: 13124}
     - Class: 114
-      Script: {instanceID: 13296}
+      Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 13328}
+      Script: {instanceID: 13326}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13650}
+    - Class: 114
+      Script: {instanceID: 13792}
     - Class: 114
       Script: {instanceID: 14134}
     - Class: 114
@@ -109,6 +112,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 331
+      Script: {instanceID: 0}
     Assets/Scenes/MainScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -129,15 +134,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12178}
     - Class: 114
-      Script: {instanceID: 12882}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13650}
     - Class: 114
       Script: {instanceID: 14134}
     - Class: 114
@@ -195,21 +200,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11172}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11514}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12178}
     - Class: 114
-      Script: {instanceID: 12882}
+      Script: {instanceID: 12880}
     - Class: 114
-      Script: {instanceID: 13174}
+      Script: {instanceID: 13172}
     - Class: 114
-      Script: {instanceID: 13222}
+      Script: {instanceID: 13220}
     - Class: 114
-      Script: {instanceID: 13652}
+      Script: {instanceID: 13650}
     - Class: 114
       Script: {instanceID: 14268}
     - Class: 115
@@ -235,15 +240,51 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11172}
+    - Class: 114
+      Script: {instanceID: 11458}
+    - Class: 114
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 12004}
+    - Class: 114
+      Script: {instanceID: 12178}
+    - Class: 114
+      Script: {instanceID: 12528}
+    - Class: 114
+      Script: {instanceID: 12880}
+    - Class: 114
+      Script: {instanceID: 13650}
+    - Class: 114
+      Script: {instanceID: 14134}
+    - Class: 114
+      Script: {instanceID: 14268}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -554,7 +595,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 5a90399189f500e8b8ce43ab84ed6c0d
+      Hash: 6e659ef1dda192f840d64efa92708eb2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMove
@@ -626,7 +667,7 @@ ScriptsOnlyBuild:
     className: DynamicJoystick
   - hash:
       serializedVersion: 2
-      Hash: d09b55e234ea8e2c685665937e657c06
+      Hash: e34d2a3782346e206f7bf01e86ffd09d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
@@ -672,6 +713,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 9fd2642549f9ff91ce69f3b44921dced
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Aim
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -799,4 +846,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/RankScene.unity
   - Assets/Scenes/SettingScene.unity
   - Assets/Scenes/ShopScene.unity
-  playerPath: E:/AsLongAsUCan/New Unity Project/Build/0607-1014.apk
+  playerPath: E:/Github/MonoChrome-Unity/MonoChrome/Build/test.apk
