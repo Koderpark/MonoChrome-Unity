@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Configuration;
 using System.Xml;
+using System.Xml.Serialization;
 using System.Diagnostics;
 using System.Runtime.Versioning;
-using UnityEngine.SceneManagement;
 
 public class SetSetting : MonoBehaviour
 {
@@ -17,21 +17,21 @@ public class SetSetting : MonoBehaviour
 
     private void Start()
     {
-        TextAsset txt = (TextAsset)Resources.Load("setting");
+        string txt = System.IO.File.ReadAllText("./Assets/Resources/setting.xml");
         XmlDocument setxml = new XmlDocument();
-        setxml.LoadXml(txt.text);
+        setxml.LoadXml(txt);
 
         playername.text = setxml.GetElementsByTagName("playerName")[0].InnerText;
         bgm.value = float.Parse(setxml.GetElementsByTagName("bgm")[0].InnerText);
         sfx.value = float.Parse(setxml.GetElementsByTagName("sfx")[0].InnerText);
 
-        UnityEngine.Debug.Log("test");
+        //UnityEngine.Debug.Log("test");
     }
     public void SettingExit()
     {
-        TextAsset txt = (TextAsset)Resources.Load("setting");
+        string txt = System.IO.File.ReadAllText("./Assets/Resources/setting.xml");
         XmlDocument xml = new XmlDocument();
-        xml.LoadXml(txt.text);
+        xml.LoadXml(txt);
 
         xml.GetElementsByTagName("playerName")[0].InnerText = playername.text;
         xml.GetElementsByTagName("bgm")[0].InnerText = bgm.value.ToString();
